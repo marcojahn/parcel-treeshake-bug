@@ -1,0 +1,41 @@
+$ cat /Users/mjahn/.npm/_logs/2019-09-03T06_15_03_866Z-debug.log
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/mjahn/.nvm/versions/node/v11.10.0/bin/node',
+1 verbose cli   '/Users/mjahn/.nvm/versions/node/v11.10.0/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'build:treeshake' ]
+2 info using npm@6.7.0
+3 info using node@v11.10.0
+4 verbose run-script [ 'prebuild:treeshake',
+4 verbose run-script   'build:treeshake',
+4 verbose run-script   'postbuild:treeshake' ]
+5 info lifecycle parcel-treeshake-bug@0.0.1~prebuild:treeshake: parcel-treeshake-bug@0.0.1
+6 info lifecycle parcel-treeshake-bug@0.0.1~build:treeshake: parcel-treeshake-bug@0.0.1
+7 verbose lifecycle parcel-treeshake-bug@0.0.1~build:treeshake: unsafe-perm in lifecycle true
+8 verbose lifecycle parcel-treeshake-bug@0.0.1~build:treeshake: PATH: /Users/mjahn/.nvm/versions/node/v11.10.0/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/mjahn/Projects/cc/parcel-treeshake-bug/node_modules/.bin:/Users/mjahn/.yarn/bin:/Users/mjahn/.config/yarn/global/node_modules/.bin:/Applications/Fortify/Fortify_SCA_and_Apps_18.20/bin:/Users/mjahn/.nvm/versions/node/v11.10.0/bin:/usr/local/homebrew/opt/python/libexec/bin:/usr/local/homebrew/bin:/usr/local/homebrew/sbin:/Users/mjahn/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS
+9 verbose lifecycle parcel-treeshake-bug@0.0.1~build:treeshake: CWD: /Users/mjahn/Projects/cc/parcel-treeshake-bug
+10 silly lifecycle parcel-treeshake-bug@0.0.1~build:treeshake: Args: [ '-c',
+10 silly lifecycle   'rimraf ./dist && parcel build --experimental-scope-hoisting ./src/index.html' ]
+11 silly lifecycle parcel-treeshake-bug@0.0.1~build:treeshake: Returned: code: 1  signal: null
+12 info lifecycle parcel-treeshake-bug@0.0.1~build:treeshake: Failed to exec build:treeshake script
+13 verbose stack Error: parcel-treeshake-bug@0.0.1 build:treeshake: `rimraf ./dist && parcel build --experimental-scope-hoisting ./src/index.html`
+13 verbose stack Exit status 1
+13 verbose stack     at EventEmitter.<anonymous> (/Users/mjahn/.nvm/versions/node/v11.10.0/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:301:16)
+13 verbose stack     at EventEmitter.emit (events.js:197:13)
+13 verbose stack     at ChildProcess.<anonymous> (/Users/mjahn/.nvm/versions/node/v11.10.0/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+13 verbose stack     at ChildProcess.emit (events.js:197:13)
+13 verbose stack     at maybeClose (internal/child_process.js:984:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:265:5)
+14 verbose pkgid parcel-treeshake-bug@0.0.1
+15 verbose cwd /Users/mjahn/Projects/cc/parcel-treeshake-bug
+16 verbose Darwin 18.7.0
+17 verbose argv "/Users/mjahn/.nvm/versions/node/v11.10.0/bin/node" "/Users/mjahn/.nvm/versions/node/v11.10.0/bin/npm" "run" "build:treeshake"
+18 verbose node v11.10.0
+19 verbose npm  v6.7.0
+20 error code ELIFECYCLE
+21 error errno 1
+22 error parcel-treeshake-bug@0.0.1 build:treeshake: `rimraf ./dist && parcel build --experimental-scope-hoisting ./src/index.html`
+22 error Exit status 1
+23 error Failed at the parcel-treeshake-bug@0.0.1 build:treeshake script.
+23 error This is probably not a problem with npm. There is likely additional logging output above.
+24 verbose exit [ 1, true ]
